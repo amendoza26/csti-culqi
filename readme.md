@@ -1,11 +1,9 @@
 # CSTI - Culqi
-## Tabla de contenidos
-
-### Información general
+## Información general
 
 Proyecto para proceso de tokenización de los datos de tarjetas y obtener los datos de la tarjeta (sin ccv) al incluir el token en peticion. Desarrollado con nodejs, typescript y jest.
 
-### Requisitos
+## Requisitos
 
 Asegúrate de tener instalado en tu máquina:
 
