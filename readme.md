@@ -25,7 +25,7 @@ Asegúrate de tener instalado en tu máquina:
 
 ## Ejecución
 
-1. Ejecutar npm start para ejecutar el back.
+1. Ejecutar `npm start` para ejecutar el proyecto localmente.
 
 2. Para ejecutar las pruebas puedes ejecutar el comando `npm test` en tu terminal.
 
