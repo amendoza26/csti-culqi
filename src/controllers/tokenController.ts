@@ -1,6 +1,4 @@
-import { SignIn, getCardDataByToken } from "../services/tokenService";
-const { tokenService } = require("../services/tokenService");
-import { Request, Response, NextFunction } from "express";
+import { SignIn, getCardDataByToken } from "../services/tokenService";import { Request, Response } from "express";
 
 interface CardData {
   cardNumber: number;
@@ -20,7 +18,6 @@ export const createToken = async (req: Request, res: Response) => {
   // Llama a la función SignIn para crear el token
   const token = await SignIn(cardData);
 
-  // Envia el token como respuesta
   res.json({ token });
 };
 

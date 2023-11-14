@@ -63,7 +63,6 @@ export const getCardDataByToken = (token: string): CardData | null => {
     };
     return cardDataWithoutCvv;
   } catch (error) {
-    // Manejar el error si el token es inválido o ha expirado
     return null;
   }
 };
@@ -78,10 +77,8 @@ const isValidCvv = (cvv?: number): boolean => {
 };
 
 const isValidCardNumber = (cardNumber: number): boolean => {
-  // Convertir el número a cadena y eliminar espacios en blanco
   const cardNumberStr = cardNumber.toString().replace(/\s/g, "");
 
-  // Eliminar espacios en blanco y revertir el número para facilitar la implementación del algoritmo
   const reversedCardNumber = cardNumberStr.split("").reverse().join("");
 
   let sum = 0;
